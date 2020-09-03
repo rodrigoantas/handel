@@ -1,0 +1,238 @@
+.woocommerce a {
+  text-decoration: underline;
+}
+
+/* notificações */
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  background: #eee;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce-error::before {
+  display: none;
+}
+
+.woocommerce-error {
+  border-left: 4px solid orangered;
+}
+
+.woocommerce-message,
+.woocommerce-info {
+  border-left: 4px solid greenyellow;
+}
+
+/* formuários */
+
+.woocommerce .input-text {
+  font-size: 1.125rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: rgba(0, 0, 0, 0.08) !important;
+  padding: 10px 15px !important;
+  border-radius: 10px !important;
+}
+
+.woocommerce form .form-row {
+  padding: 3px 0;
+}
+
+.woocommerce button.button {
+  background: black !important;
+  color: white !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+  min-height: 43px;
+}
+/* carrinho */
+.woocommerce-cart #coupon_code {
+  min-width: 180px;
+  margin-right: 10px;
+}
+
+.woocommerce-cart a.button.alt {
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #0066bb;
+}
+
+.woocommerce-cart a.button.alt:hover {
+  background: #1188ee;
+}
+
+.woocommerce-cart .cart_totals h2 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* checkout*/
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.woocommerce .checkout h3 {
+  font-size: 1rem;
+  padding: 15px;
+  background: #111;
+  color: white;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.woocommerce #ship-to-different-address {
+  float: none !important;
+}
+
+@media (max-width: 800px) {
+  .woocommerce #ship-to-different-address {
+    margin-top: 30px;
+  }
+}
+
+.woocommerce #order_review_heading {
+  margin-top: 30px;
+}
+
+.woocommerce #payment,
+.woocommerce #payment div.payment_box {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: black;
+}
+
+.woocommerce #payment #place_order {
+  float: none;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background: #0066bb !important;
+}
+
+.woocommerce #payment #place_order:hover {
+  background: #1188ee !important;
+}
+
+/* pagseguro */
+
+.woocommerce #pagseguro-payment-form {
+  border: none;
+}
+
+.woocommerce #payment div.payment_box ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* minha conta */
+
+.woocommerce-account h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.woocommerce-account.logged-in .woocommerce {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .woocommerce-account.logged-in .woocommerce {
+    grid-template-columns: 1fr;
+  }
+}
+
+.woocommerce-account.logged-in .woocommerce::after,
+.woocommerce-account.logged-in .woocommerce::before {
+  display: none;
+}
+
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+.woocommerce-account.logged-in .woocommerce-MyAccount-content {
+  float: none;
+  width: auto;
+}
+
+/* Estilo sidemenu*/
+.woocommerce-MyAccount-navigation ul {
+  background: #111;
+}
+.woocommerce-MyAccount-navigation a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active {
+  background: orangered;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 1rem !important;
+}
+
+.woocommerce-MyAccount-content button {
+  margin-top: 15px !important;
+}
+
+.woocommerce-MyAccount-content mark {
+  background: none;
+}
+
+/*  pedido recebido */
+
+.woocommerce-order-received h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.woocommerce-order-received .woocommerce-thankyou-order-received {
+  color: white;
+  background: #0066bb;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details {
+  background: #eee;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.woocommerce-order-received ul.order_details li {
+  margin: 5px;
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.woocommerce-order-received ul.order_details li strong {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.woocommerce-order-received ul.order_details + p {
+  margin-bottom: 30px;
+}
+
+.woocommerce-page .woocommerce-message .button {
+  font-weight: normal;
+  color: #fff;
+  background: #0066bb;
+}
+.woocommerce-page .woocommerce-message .button:hover {
+  color: white;
+  background: #1188ee;
+}
